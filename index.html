@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/">
+    <title>Advising</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+    <div class="robo-advisor">
+        <h1>Advising at your Finger Tips</h1>
+        <p>By answering a few questions, we can get you on the right track ASAP!</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Investor Details Form</h3>
+                <form action="register" method="POST">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Career Industry</label>
+                            <input type="text" name="Industry" placeholder="Ex. Finance" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Would you Like to Withdraw Cash?</label>
+                            <input type="text" name="Withdraw?" placeholder="Ex. Yes/No" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Income?</label>
+                            <input type="text" name="Income" placeholder="Ex. 100000 (no commas)" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Age</label>
+                            <input type="age" name="Age" placeholder="Ex. 45" required>
+                        </div>
+                        <div class="input-group">
+                            <label>If Yes, What Amount?</label>
+                            <input type="amountWithdraw" name="Amount to Withdraw" placeholder="Ex. 10000" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Risk you are Willing to Tolerate in Investment Strategy?</label>
+                            <input type="risk" name="Risk" placeholder="Ex. 1 = low; 2 = medium; 3 = high" required>
+                        </div>
+                    </div>
+                    <label>Additional Comments</label>
+                    <textarea rows="5" name="Comments" placeholder="Additional Comments"></textarea>
+                    <button class="advising-submission" id="message" type="submit">Submit Form</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
