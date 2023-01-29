@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.robo-advisor{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: #191919;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 100%;
+    padding: 40px 60px;
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.robo-advisor p{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+h3{
+    color: #fff;
+}
+
+body{
+    background: #4d4949;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 30%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+.input-row label{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+    margin-bottom: 6px;
+    display: block;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.advising-submission{
+    background: #c720c9;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: all 0.3s ease;
+    background: #650565;
+}
+
+.contact-left h3{
+    font-weight: 700;
+    font-size: 150%;
+    margin-bottom: 30px;
+}
+
+.contact-right h3{
+    font-weight: 700;
+    font-size: 150%;
+    margin-bottom: 30px;
+}
+
+.contact-right p{
+    font-size: larger;
+}
+
+.contact-link a{
+    color: #fff;
+    font-size: larger;
+}
+
+@media screen and (max-width: 960px) {
+    .robo-advisor{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    } 
+
+    .robo-advisor h1{
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .robo-advisor p{
+        text-align: left;
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .contact-box{
+        width: 50%;
+        height: 90%;
+    }
+
+    .input-group {
+        margin: 0.5rem;
+    }
+}
